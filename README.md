@@ -1,4 +1,4 @@
-# TDD-Vending-Machine
+# TDD-Vending-Machine-Example
 
 <div align="center">
 
