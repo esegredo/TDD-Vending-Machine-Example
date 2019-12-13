@@ -34,4 +34,6 @@ test('getChange(12, 400) should return [200, 100, 50, 20, 10, 5, 2, 1]', functio
 });
 
 /* istanbul ignore next */
-if (typeof module !== 'undefined' && module.exports) { QUnit.load(); } // run the tests
+if (typeof module !== 'undefined' && module.exports) {
+  QUnit.load(); // run the tests
+}

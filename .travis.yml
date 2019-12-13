@@ -1,3 +1,15 @@
 language: node_js
 node_js:
- - "node"
+- node
+
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: "esegredo"
+    token:
+      secure: "rxTU8FHcsOXrid/5IlIvaglZXUqkINpaSTk8TI1obNgMPyYfMWY9UJkSxRYE4SnG0sjd34QZG4PcyhaLXUb/EOwyLPFnu7UpEdSpveRiBUtyhV2Dj+eZtKgNT2u+mI+PscZXb4XFlKbME9jsm/nwNCQkbvZ7JmdFO7adYk+fUozOdzl9qzkT7imtwD+HUT9H2YFaT9NHtkbZty6XJPm0qzdKyfQpiJ/2CsFaLUgIWHgdoC1QaU4ej7RpKD7XB3iNfZq3GGfcZa53lVkkm+NsjL0ENibXbi4pTukz/7p10qlojemdI+acwXLGQm+h8vA8PGW1N3uPgGczhk0M+cp/TMLRjv+0D+MkcldUvQiAJ0UHIXS89vNrBjIun0EJ1aaoSdQQyXL/7oI9+yDLtZRAOf7QZ/55uqFSGnr11SIxZi7LVfqbmyR12XTjkx2OtWdtxEEEVbssYEH+0x4a/2/RWZMJboSYYJACh0EeSQ8nbJJJB+wPG3vqyhznlD6kFDV+GrNZHk5EBmK2zn1y0EziK9FN8Sh5RPsXiFySCuvkmirKE9uDn8y8hsyGP9+sLSXFWykGvzdtQNypsh8LEboa6adalk89tlHULL9EzzIqXQKdRKW+K3XiZFbP2Ibw6UXLxcnq+tnWN4WP8Qd0GNi6qhWC+iMsqT9PumlkGXmO5Os="
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
