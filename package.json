@@ -2,9 +2,6 @@
   "name": "vending-machine",
   "version": "1.0.0",
   "main": "change.js",
-  "scripts": {
-    "test": "istanbul cover test.js && codecov"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
