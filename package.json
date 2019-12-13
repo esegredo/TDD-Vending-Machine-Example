@@ -15,6 +15,6 @@
   "dependencies": {},
   "description": "",
   "scripts": {
-    "test": "istanbul cover test.js && codecov"
+    "test": "istanbul cover test/test.js && codecov"
   }
 }
